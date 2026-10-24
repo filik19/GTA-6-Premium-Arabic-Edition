@@ -32,7 +32,6 @@ int main()
     std::cout << "Compiler: C++ Visual Studio 2026\n";
     std::cout << "\n";
 
-
     std::cout << "Press ENTER to continue\n";
     std::cin.get();
 
