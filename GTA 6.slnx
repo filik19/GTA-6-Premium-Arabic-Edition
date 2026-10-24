@@ -1,0 +1,9 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="GTA 6/GTA 6.vcxproj" Id="319abad2-d1ec-46e1-8862-713b7e9b605d">
+    <BuildType Solution="Debug|x64" Project="Release" />
+  </Project>
+</Solution>
