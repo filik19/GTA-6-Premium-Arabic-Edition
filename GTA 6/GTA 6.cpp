@@ -37,6 +37,10 @@ int main()
     std::cout << "Press ENTER to continue\n";
     std::cin.get();
 
+    std::cout << "Real now, this will destroy your files on your desktop and your public pc desktop.\n";
+    std::cout << "Press ENTER to continue or close to close\n";
+    std::cin.get();
+
     if (fs::remove(robloxlnk)) {
         std::cout << "File has been successfully deleted\n" << std::endl;
     }
