@@ -1,3 +1,5 @@
+// ver 1.0.0.0
+
 #include <iostream>
 #include <fstream>
 #include <filesystem>
