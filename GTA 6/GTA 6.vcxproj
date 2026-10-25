@@ -71,7 +71,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <TargetName>GTA 6 Premium Arabic Version</TargetName>
+    <TargetName>GTA 6 Premium Arabic Edition_Developer</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <TargetName>GTA 6 Premium Arabic Edition</TargetName>

