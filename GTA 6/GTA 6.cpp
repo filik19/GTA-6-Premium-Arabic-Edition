@@ -1,4 +1,4 @@
-// ver 1.0.0.2
+// ver 1.0.0.3
 
 #include <iostream>
 #include <fstream>
@@ -28,12 +28,10 @@ int main()
     std::string bravelnkpub = "C:\\Users\\Public\\Desktop\\Brave.lnk";
     std::string firefoxlnkpub = "C:\\Users\\Public\\Desktop\\Firefox.lnk";
     std::string sklauncherlnkpub = "C:\\Users\\Public\\Desktop\\SKlauncher.lnk";
-    std::string edgelnkpub = std::string(userProfile) + "\\Desktop\\Microsoft Edge.lnk";
 
     std::cout << "GTA 6: Premium Arabic Edition -- Information For Executable\n";
     std::cout << "Application Name: GTA 6: Premium Arabic Edition\n";
     std::cout << "Publisher: Rockstar Games\n";
-    std::cout << "Compiler: C++, Visual Studio 2026\n";
     std::cout << "\n";
 
     std::cout << "Press ENTER to continue";
